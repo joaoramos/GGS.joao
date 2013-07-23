@@ -25,14 +25,9 @@ body {
     line-height: 1.4;
 }
 
-::-moz-selection {
-    //background: ;
-    color: white;
-    text-shadow: none;
-}
-
+::-moz-selection,
 ::selection {
-    //background: ;
+    background: lightsteelblue;
     color: white;
     text-shadow: none;
 }
@@ -106,15 +101,10 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-.tiny {
+.small {
 	/* 13px / 18px */
 	font-size: (@font-size*0.8125) / @em;
 	line-height: (@line*0.75) / (@font-size*0.8125) * 1em;
-}
-
-.small {
-    font-size: 13/@em;
-    line-height: 23/@em;
 }
 
 .normal, h3 {
@@ -145,6 +135,10 @@ img {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
+}
+
+.block {
+    padding: 0 (@line/2)/@em;
 }
 
 /* ==========================================================================
