@@ -132,13 +132,16 @@ img {
 }
 
 .wrapper {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-			box-sizing: border-box;
+    .border-box;
+    padding: 0 (@line/2)/@em;
 }
 
-.block {
-    padding: 0 (@line/2)/@em;
+.border-box {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* ==========================================================================
